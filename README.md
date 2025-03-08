@@ -1,6 +1,116 @@
 # teste_AddProduto
 
 
+
+@echo off
+echo Criando estrutura de diretórios para projeto Streetwear Shop...
+
+:: Criar diretório principal
+mkdir streetwear-shop
+cd streetwear-shop
+
+:: Criar estrutura do frontend
+mkdir frontend
+mkdir frontend\assets
+mkdir frontend\assets\css
+mkdir frontend\assets\js
+mkdir frontend\assets\images
+mkdir frontend\assets\images\logo
+mkdir frontend\assets\images\products
+mkdir frontend\assets\images\icons
+
+:: Criar arquivos HTML do frontend
+echo. > frontend\index.html
+echo. > frontend\produtos.html
+echo. > frontend\produto-detalhe.html
+echo. > frontend\carrinho.html
+echo. > frontend\checkout.html
+echo. > frontend\login.html
+echo. > frontend\conta.html
+
+:: Criar arquivos CSS do frontend
+echo. > frontend\assets\css\style.css
+echo. > frontend\assets\css\animations.css
+echo. > frontend\assets\css\responsive.css
+
+:: Criar arquivos JS do frontend
+echo. > frontend\assets\js\main.js
+echo. > frontend\assets\js\cart.js
+echo. > frontend\assets\js\animations.js
+echo. > frontend\assets\js\api.js
+
+:: Criar estrutura do admin
+mkdir admin
+mkdir admin\assets
+mkdir admin\assets\css
+mkdir admin\assets\js
+mkdir admin\assets\images
+
+:: Criar arquivos HTML do admin
+echo. > admin\index.html
+echo. > admin\produtos.html
+echo. > admin\estoque.html
+echo. > admin\pedidos.html
+echo. > admin\estatisticas.html
+
+:: Criar estrutura do backend
+mkdir backend
+mkdir backend\config
+mkdir backend\controllers
+mkdir backend\models
+mkdir backend\routes
+mkdir backend\middleware
+
+:: Criar arquivos do backend
+echo. > backend\server.js
+echo. > backend\config\db.js
+echo. > backend\config\auth.js
+
+:: Criar arquivos dos controllers
+echo. > backend\controllers\productController.js
+echo. > backend\controllers\userController.js
+echo. > backend\controllers\orderController.js
+echo. > backend\controllers\statsController.js
+
+:: Criar arquivos dos models
+echo. > backend\models\Product.js
+echo. > backend\models\User.js
+echo. > backend\models\Order.js
+echo. > backend\models\Brand.js
+
+:: Criar arquivos das rotas
+echo. > backend\routes\products.js
+echo. > backend\routes\users.js
+echo. > backend\routes\orders.js
+echo. > backend\routes\stats.js
+
+:: Criar arquivos dos middlewares
+echo. > backend\middleware\auth.js
+echo. > backend\middleware\admin.js
+
+:: Criar estrutura do banco de dados
+mkdir database
+echo. > database\schema.sql
+
+:: Voltar para o diretório principal e mostrar mensagem de conclusão
+cd ..
+echo.
+echo Estrutura de diretórios e arquivos criada com sucesso!
+echo A estrutura foi criada no diretório: %cd%\streetwear-shop
+echo.
+pause
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
