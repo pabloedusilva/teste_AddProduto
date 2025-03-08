@@ -2,6 +2,28 @@
 
 
 
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ]
+}
+
+
+
+
+
+
+
 @echo off
 echo Criando estrutura de diretórios para projeto Streetwear Shop...
 
